@@ -8,14 +8,19 @@ const VideoDetail = ({ video }) => {
   return (
     <div>
       <div className="ui embed">
-        <iframe
+        {/*  <iframe
+          title="Video player"
           width="560"
           height="315"
           src={`https://www.youtube.com/embed/${video.id.videoId}`}
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+          allowFullScreen
+        ></iframe> */}
+        <iframe
+          title="Video player"
+          src={`https://www.youtube.com/embed/${video.id.videoId}`}
+        />
       </div>
 
       <div className="ui segment">
